@@ -18,7 +18,9 @@ public class Main {
         int diff = endDay - startDay + 1; // 양쪽 끝의 날짜를 포함하기 위해서 +1
         // -> ex) 두 날짜가 3월 1일과 3월 3일이라면, 1일부터 3일까지 총 3일이 포함되어야 함
 
-        System.out.println(days[diff % 7]);
+        int index = (diff % 7 + 7) & 7; // 연산 결과를 항상 양수로 반환
+
+        System.out.println(days[index]);
     }
 
         

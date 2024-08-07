@@ -18,7 +18,7 @@ public class Main {
 
         int remainDate = targetDate - startDate + 1;
         
-        int targetDateIdx = 0;
+        int targetDateIdx = -1;
         for(int i=0; i<name_day.length; i++){
             if(name_day[i].equals(day)){
                 targetDateIdx = i;

@@ -40,7 +40,7 @@ public class Main {
     public static int countDay(int m, int d){
         int[] months = new int[]{0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-        int days = 1;
+        int days = 0;
 
         for(int i=1; i<m; i++){
             days += months[i];

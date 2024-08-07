@@ -19,6 +19,7 @@ public class Main {
         int remainDate = targetDate - startDate + 1;
         
         int targetDateIdx = 0;
+        // targetDate의 인덱스 찾기
         for(int i=0; i<name_day.length; i++){
             if(name_day[i].equals(day)){
                 targetDateIdx = i;
@@ -27,6 +28,8 @@ public class Main {
 
         int count = 0;
         int startDateIdx = 1;
+        
+        // targetDate가 몇번 나오지는 검사
         for(int i=0; i<remainDate; i++){
             int currentDateIdx = (startDateIdx + i) % 7;
             if(targetDateIdx == currentDateIdx){

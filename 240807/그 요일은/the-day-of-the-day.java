@@ -5,7 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        String[] name_day = new String[]{"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+        String[] name_day = new String[]{"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
 
         int m1 = sc.nextInt();
         int d1 = sc.nextInt();
@@ -18,7 +18,7 @@ public class Main {
 
         int remainDate = targetDate - startDate + 1;
         
-        int targetDateIdx = -1;
+        int targetDateIdx = 0;
         for(int i=0; i<name_day.length; i++){
             if(name_day[i].equals(day)){
                 targetDateIdx = i;

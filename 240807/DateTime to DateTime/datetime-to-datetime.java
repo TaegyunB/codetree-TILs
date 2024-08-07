@@ -5,36 +5,27 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        int month = 11;
-        int day = 11;
-        int hour = 11;
-        int min = 11;
+        int startDay = 11;
+        int startHour = 11;
+        int startMin = 11;
 
-        int d_day = sc.nextInt();
-        int d_hour = sc.nextInt();
-        int d_min = sc.nextInt();
-        int elapsedMin = 0;
+        int targetDay = sc.nextInt();
+        int targetHour = sc.nextInt();
+        int targetMin = sc.nextInt();
+        
+        // 기준 시간을 분 단위로 변환
+        int startMinutes = (startDay * 24 * 60) + (startHour * 60) + startMin;
 
-        while(true){
-            if(day == d_day && hour == d_hour && min == d_min){
-                break;
-            }
+        // 목표 시간을 분 단위로 변환
+        int targetMinutes = (targetDay * 24 * 60) + (targetHour * 60) + targetMin;
 
-            min++;
-            elapsedMin++;
-
-            if(min == 60){
-                hour++;
-                min = 0;
-            }
-
-            if(hour == 24){
-                day++;
-                hour = 0;
-            }
+        int elapsedMin = targetMinutes - startMinutes;
+        
+        if(elapsedMin < 0){
+            System.out.println(-1);
         }
-
-        System.out.println(elapsedMin);
-
+        else{
+            System.out.println(elapsedMin);
+        }
     }
 }

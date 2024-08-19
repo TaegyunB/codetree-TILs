@@ -15,6 +15,9 @@ public class Main {
             char way = sc.next().charAt(0);
 
             if(way == 'R'){
+                if(start < 0){
+                    start += x;
+                }
                 for(int j=start; j<=start+x; j++){
                     arr[j+offset]++;
                 }  

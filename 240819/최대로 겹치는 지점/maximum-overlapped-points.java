@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
-        int[] arr = new int[100];
+        int[] arr = new int[101];
 
         int n = sc.nextInt();
         for(int i=0; i<n; i++){
             int x = sc.nextInt();
             int y = sc.nextInt();
 
-            for(int j=x-1; j<=y; j++){
+            for(int j=x; j<=y; j++){
                 arr[j] += 1;
             }
         }

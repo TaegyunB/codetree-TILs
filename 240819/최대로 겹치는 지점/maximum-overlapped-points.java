@@ -11,7 +11,7 @@ public class Main {
             int x = sc.nextInt();
             int y = sc.nextInt();
 
-            for(int j=x; j<=y; j++){
+            for(int j=x-1; j<=y; j++){
                 arr[j] += 1;
             }
         }

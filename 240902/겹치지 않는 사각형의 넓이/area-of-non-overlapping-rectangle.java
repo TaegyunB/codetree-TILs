@@ -6,7 +6,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int[][] arr = new int[201][201];
+        int[][] arr = new int[10001][1001];
 
         for(int i=0; i<3; i++){
             int x1 = sc.nextInt();

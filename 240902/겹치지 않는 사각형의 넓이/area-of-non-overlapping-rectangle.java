@@ -14,18 +14,9 @@ public class Main {
             int x2 = sc.nextInt();
             int y2 = sc.nextInt();
 
-            if(i == 2){
-                for(int j=x1; j<x2; j++){
-                    for(int k=y1; k<y2; k++){
-                        arr[j][k] = 3;
-                    }
-                }
-            }
-            else{
-                for(int j=x1; j<x2; j++){
-                    for(int k=y1; k<y2; k++){
-                        arr[j][k] += 1;
-                    }
+            for(int j=x1; j<x2; j++){
+                for(int k=y1; k<y2; k++){
+                    arr[j][k] = i+1; //  직사각형마다 1, 2, 3 번호 부여
                 }
             }
         }
@@ -33,7 +24,7 @@ public class Main {
         int cnt = 0;
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr[i].length; j++){
-                if(arr[i][j] == 1){
+                if(arr[i][j] == 1 || arr[i][j] == 2){
                     cnt++;
                 }
             }

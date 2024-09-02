@@ -7,7 +7,7 @@ public class Main {
         
         int n = sc.nextInt();
         int start = 0;
-        int[] arr = new int[201];
+        int[] arr = new int[301];
         int offset = 100;
 
         for(int i=0; i<n; i++){

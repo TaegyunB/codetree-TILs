@@ -7,6 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[][] arr = new int[1001][1001];
+        int offset = 100;
 
         for(int i=0; i<3; i++){
             int x1 = sc.nextInt();
@@ -16,7 +17,7 @@ public class Main {
 
             for(int j=x1; j<x2; j++){
                 for(int k=y1; k<y2; k++){
-                    arr[j][k] = i+1; //  직사각형마다 1, 2, 3 번호 부여
+                    arr[j+offset][k+offset] = i+1; //  직사각형마다 1, 2, 3 번호 부여
                 }
             }
         }

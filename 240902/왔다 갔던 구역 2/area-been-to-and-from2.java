@@ -22,7 +22,7 @@ public class Main {
                 
             }
             else if(way == 'L'){
-                for(int j=start; j>start-x; j--){
+                for(int j=start; j>=start-x; j--){
                     arr[j+offset]++;
                 }
                 start += x;

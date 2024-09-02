@@ -15,7 +15,7 @@ public class Main {
 
             for(int j=x; j<x+8; j++){
                 for(int k=y; k<y+8; k++){
-                    arr[j][k] = i+1;
+                    arr[j][k] = 1;
                 }
             }
         }
@@ -23,7 +23,7 @@ public class Main {
 
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr[i].length; j++){
-                if(arr[i][j] >= 1){
+                if(arr[i][j] == 1){
                     cnt++;
                 }
             }

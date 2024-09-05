@@ -21,6 +21,9 @@ public class Main {
             if(i == 0 || list.get(i) == list.get(i-1)){
                 cnt++;
             }
+            else{
+                cnt = 1;
+            }
         }
 
         System.out.println(cnt);

@@ -14,18 +14,22 @@ public class Main {
             list.add(num);
         }
 
-        int max = 0;
         int cnt = 0;
+        int maxCnt = 0;
 
         for(int i=0; i<n; i++){
             if(i == 0 || list.get(i) == list.get(i-1)){
                 cnt++;
             }
             else{
+                // Math.max(a, b) = 두 값 a와 b 중 더 큰 값을 반환
+                maxCnt = Math.max(cnt, maxCnt);
                 cnt = 1;
             }
         }
 
-        System.out.println(cnt);
+        maxCnt = Math.max(cnt, maxCnt);
+
+        System.out.println(maxCnt);
     }
 }

@@ -18,7 +18,7 @@ public class Main {
         int maxCnt = 0;
 
         for(int i=0; i<n; i++){
-            if(i == 0 || list.get(i).equals(list.get(i-1))){
+            if(i == 0 || list.get(i).equals(list.get(i-1))){ // == 연산자는 주소값을 비교함
                 cnt++;
             }
             else{

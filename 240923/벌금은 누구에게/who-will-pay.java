@@ -24,7 +24,7 @@ public class Main {
         }
 
         if(penaltyMoney == false){
-            System.out.println(-1)
+            System.out.println(-1);
         }
     }
 }

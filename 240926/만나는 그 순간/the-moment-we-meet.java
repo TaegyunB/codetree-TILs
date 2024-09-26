@@ -57,7 +57,7 @@ public class Main {
         }
 
         boolean found = false;
-        for(int i=1; i<a.length; i++){
+        for(int i=1; i<cnt; i++){
             //System.out.printf("%d: %d %d\n", i, a[i], b[i]);
             if(a[i] == b[i]){
                 System.out.println(i);

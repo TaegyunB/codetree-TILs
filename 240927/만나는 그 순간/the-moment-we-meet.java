@@ -9,8 +9,10 @@ public class Main {
         int m = sc.nextInt();
         int[] a = new int[1001];
         int[] b = new int[1001];
-        int loc = 0;
-        int cnt = 0;
+        int Aloc = 1;
+        int Acnt = 0;
+        int Bloc = 1;
+        int Bcnt = 0;
 
 
         for(int i=0; i<n; i++){
@@ -19,22 +21,19 @@ public class Main {
 
             if(d == 'R'){
                 for(int j=0; j<t; j++){
-                    cnt++;
-                    a[loc] = cnt;
-                    loc++;
+                    Acnt++;
+                    a[Aloc] = Acnt;
+                    Aloc++;
                 }
             }
             else if(d == 'L'){
                 for(int j=0; j<t; j++){
-                    cnt--;
-                    a[loc] = cnt;
-                    loc++;
+                    Acnt--;
+                    a[Aloc] = Acnt;
+                    Aloc++;
                 }
             }
         }
-
-        loc = 0;
-        cnt = 0;
 
         for(int i=0; i<m; i++){
             char d = sc.next().charAt(0);
@@ -42,25 +41,30 @@ public class Main {
 
             if(d == 'R'){
                 for(int j=0; j<t; j++){
-                    cnt++;
-                    b[loc] = cnt;
-                    loc++;
+                    Bcnt++;
+                    b[Bloc] = Bcnt;
+                    Bloc++;
                 }
             }
             else if(d == 'L'){
                 for(int j=0; j<t; j++){
-                    cnt--;
-                    b[loc] = cnt;
-                    loc++;
+                    Bcnt--;
+                    b[Bloc] = Bcnt;
+                    Bloc++;
                 }
             }
         }
 
         boolean found = false;
-        for(int i=0; i<=cnt; i++){
-            //System.out.printf("%d: %d %d\n", i, a[i], b[i]);
+        int maxLoc = Math.max(Aloc, Bloc);
+
+        // for(int i=1; i<=maxLoc; i++){
+        //     System.out.printf("%d: %d %d\n", i, a[i], b[i]);
+        // }
+
+        for(int i=1; i<=maxLoc; i++){
             if(a[i] == b[i]){
-                System.out.println(i+1);
+                System.out.println(i);
                 found = true;
                 break;
             }
@@ -71,4 +75,3 @@ public class Main {
         }    
     }
 }
-// 0에서 시작하는 걸 고려하지 말아야함

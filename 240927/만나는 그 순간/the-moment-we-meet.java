@@ -7,8 +7,8 @@ public class Main {
 
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] a = new int[1001];
-        int[] b = new int[1001];
+        int[] a = new int[1000];
+        int[] b = new int[1000];
         int Aloc = 1;
         int Acnt = 0;
         int Bloc = 1;

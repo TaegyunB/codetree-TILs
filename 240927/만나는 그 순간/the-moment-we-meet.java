@@ -58,9 +58,9 @@ public class Main {
         boolean found = false;
         int minLoc = Math.min(Aloc, Bloc);
 
-        for(int i=1; i<minLoc; i++){
-            System.out.printf("%d: %d %d\n", i, a[i], b[i]);
-        }
+        // for(int i=1; i<minLoc; i++){
+        //     System.out.printf("%d: %d %d\n", i, a[i], b[i]);
+        // }
 
         for(int i=1; i<minLoc; i++){
             if(a[i] == b[i]){

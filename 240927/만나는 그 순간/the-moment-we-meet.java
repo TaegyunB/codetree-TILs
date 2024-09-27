@@ -56,7 +56,7 @@ public class Main {
         }
 
         boolean found = false;
-        int maxLoc = Math.max(Aloc, Bloc);
+        int minLoc = Math.min(Aloc, Bloc);
 
         // for(int i=1; i<=maxLoc; i++){
         //     System.out.printf("%d: %d %d\n", i, a[i], b[i]);

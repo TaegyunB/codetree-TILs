@@ -8,8 +8,8 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int[] n_dis = new int[1000];
-        int[] m_dis = new int[1000];
+        int[] n_dis = new int[10000000];
+        int[] m_dis = new int[10000000];
 
         int loc = 0;
         int accumulate = 0;

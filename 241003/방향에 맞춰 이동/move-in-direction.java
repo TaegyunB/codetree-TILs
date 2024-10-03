@@ -16,16 +16,16 @@ public class Main {
             int amount = sc.nextInt();
 
             if(dir == 'E'){
-                nx += amount + dx[0] - 1;
+                nx += amount * dx[0];
             }
             else if(dir == 'S'){
-                ny += amount + dy[1] - 1;
+                ny += amount * dy[1];
             }
             else if(dir == 'W'){
-                nx += amount + dx[2] - 1;
+                nx += amount * dx[2];
             }
             else{
-                ny += amount + dy[3] - 1;
+                ny += amount * dy[3];
             }
         }
         System.out.println(nx + " " + ny);

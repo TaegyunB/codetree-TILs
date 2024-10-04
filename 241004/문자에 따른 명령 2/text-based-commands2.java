@@ -23,12 +23,8 @@ public class Main {
                 dirNum = (dirNum - 1) % 4;
             }
             else{
-                if(Math.abs(dirNum) % 2 == 0){
-                    nx += nx + dx[dirNum];
-                }
-                else{
-                    ny += ny + dy[dirNum];
-                }   
+                nx += nx + dx[dirNum];
+                ny += ny + dy[dirNum];
             }
         }
         System.out.println(nx + " " + ny);

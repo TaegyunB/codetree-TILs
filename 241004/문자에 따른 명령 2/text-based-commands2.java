@@ -16,32 +16,20 @@ public class Main {
         for(int i=0; i<order.length(); i++){
             char dir = order.charAt(i);
 
-            if(i == 0){
-                if(dir == 'L'){
-                    dirNum = (dirNum - 1 + 4) % 4;
-                }
-                else if(dir == 'R'){
-                    dirNum = (dirNum + 1) % 4;
-                }
-                else{
-                    ny += ny + dx[3];
-                }
+            if(dir == 'L'){
+                dirNum = (dirNum - 1 + 4) % 4;
+            }
+            else if(dir == 'R'){
+                dirNum = (dirNum - 1) % 4;
             }
             else{
-                if(dir == 'L'){
-                    dirNum = (dirNum - 1 + 4) % 4;
-                }
-                else if(dir == 'R'){
-                    dirNum = (dirNum - 1) % 4;
+                if(dirNum % 2 == 0){
+                    nx += nx + dx[dirNum];
                 }
                 else{
-                    if(dirNum % 2 == 0){
-                        nx += nx + dx[dirNum];
-                    }
-                    else{
-                        ny += ny + dy[dirNum];
-                    }
+                    ny += ny + dy[dirNum];
                 }
+                
             }
         }
         System.out.println(nx + " " + ny);

@@ -20,7 +20,7 @@ public class Main {
                 dirNum = (dirNum - 1 + 4) % 4;
             }
             else if(dir == 'R'){
-                dirNum = (dirNum - 1) % 4;
+                dirNum = (dirNum + 1) % 4;
             }
             else{
                 nx += nx + dx[dirNum];

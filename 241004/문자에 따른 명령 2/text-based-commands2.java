@@ -9,7 +9,7 @@ public class Main {
 
         int[] dx = new int[]{1, 0, -1, 0};
         int[] dy = new int[]{0, -1, 0, 1};
-        int dirNum = 3;
+        int dirNum = 3; // 북쪽에서 시작
         int nx = 0;
         int ny = 0;
 
